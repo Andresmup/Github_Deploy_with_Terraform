@@ -2,7 +2,7 @@
 ---
 👋 Bienvenido/a a mi guía rápida sobre como desplegar un ambiente de trabajo completo en Github.
 
-🔥 Con Terraform podrás crear rápido y fácil, un entorno completo de trabajo personal o una organización en Github. 🔥
+🔥 **Con Terraform podrás crear rápido y fácil, un entorno completo de trabajo personal o una organización en Github.** 🔥
 
 ![image](https://github.com/Andresmup/Github_Deploy_with_Terraform/assets/77512331/224cb9c0-fc89-4e6d-b288-d80d3b139d3c)
 
@@ -17,13 +17,33 @@ En este caso utilizando la plantilla para organizaciones al desplegarla junto co
  - Un repositorio base para el proyecto principal.
  - Una estructura de equipos con admmin team, testing team, developer team 1 y developer team 2.
  - Cada equipo tendrá restricciones para poder gestionar, only push o pull los archivos del repositorio.
- - Se configura los pull request entre otras opciones restringiendo quien los puede revisar.
+ - Ramas main, release, develop, testing, develop team 1 y develop team 2; para tener los diferentes grupos desarrollando en ambiente especificos.
+ - Se configuran los pull request entre otras opciones restringiendo quien los puede revisar.
  - Se agrega seguridad al inhabilitar el auto-merge.
  - Se configuran las alertas de vulnerabilidad.
  - Se abre el canal de issues.
- - Y mas...
+ - Y más...
 
 ![Branchs](https://github.com/Andresmup/Github_Deploy_with_Terraform/assets/77512331/88ef6e74-bc61-4063-9171-0bc518684d84)
+
+---
+De igual forma para un repositorio personal realizar un deploy utilizando una plantilla de terraform nos permite tener una 
+consistencia a la hora de desarrollar un nuevo proyecto en Github. Teniendo diferentes ramas para etapas específicas del desarrollo, 
+utilizar buenas prácticas de seguridad y protección en nuestro repositorio. Sin tener que preocuparnos por haber olvidado 
+configurar algo o tener que revisar varias veces.
+---
+En este caso utilizando la plantilla para repositorio personal se creará:
+ - Un repositorio para el proyecto.
+ - Ramas main, release, develop y feature.
+ - Se configuran los pull request..
+ - Se agrega seguridad al inhabilitar el auto-merge.
+ - Se configuran las alertas de vulnerabilidad.
+ - Se abre el canal de issues.
+ - Habilita la wiki del repositorio.
+ - Y más...
+
+![Branch](https://github.com/Andresmup/Github_Deploy_with_Terraform/assets/77512331/451876b1-b120-44ac-aa83-dbf3278f300b)
+
 
 
 ## ➡️ REQUISITOS
